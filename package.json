@@ -2,10 +2,11 @@
   "name": "meusite",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "type": "module",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -14,14 +15,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/gustavo-devfull/meusite/issues"
   },
   "homepage": "https://github.com/gustavo-devfull/meusite#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "@tailwindcss/cli": "^4.2.2",
-    "@tailwindcss/forms": "^0.5.11",
-    "tailwindcss": "^4.2.2"
+    "@tailwindcss/vite": "^4.2.2",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.2.2",
+    "vite": "^6.2.0"
   }
 }
