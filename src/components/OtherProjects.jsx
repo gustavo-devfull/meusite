@@ -3,7 +3,7 @@ import ProjectModal from './ProjectModal'
 import proj1 from '../../assets/gpreto.jpg'
 import img99 from '../../assets/99.jpg'
 import proj2 from '../../assets/ingles.jpg'
-import proj3 from '../../assets/quiz.png'
+import proj3 from '../../assets/quiz.jpg'
 import proj4 from '../../assets/qr.jpg'
 import proj5 from '../../assets/iabr.jpg'
 import proj6 from '../../assets/nutri.jpg'
@@ -139,6 +139,8 @@ export default function OtherProjects({ onOpenLightbox }) {
                 alt={p.alt}
                 className="w-full h-full object-cover transition-transform duration-500"
                 style={{ height: '180px' }}
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="p-6 flex flex-col gap-2 flex-1">

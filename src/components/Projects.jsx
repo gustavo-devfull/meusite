@@ -80,7 +80,7 @@ export default function Projects() {
             <div key={p.imgAlt} data-animate={p.animate} className="group cursor-pointer" style={{ transitionDelay: p.delay }}>
               <div className="block">
                 <div className="project-card aspect-[16/9] bg-surface-container-lowest rounded-xl overflow-hidden mb-6 shadow-[0px_20px_40px_rgba(0,0,0,0.3)] relative flex flex-col items-center justify-end outline outline-2 outline-white/20">
-                  <img className="absolute inset-0 w-full h-full object-cover" style={{ height: '100%' }} src={p.img} alt={p.imgAlt} />
+                  <img className="absolute inset-0 w-full h-full object-cover" style={{ height: '100%' }} src={p.img} alt={p.imgAlt} loading="lazy" decoding="async" />
                   {p.extraGradient && <div className="absolute inset-0" style={{ background: p.extraGradient }} />}
                   <div className="absolute inset-0" style={{ background: p.gradient }} />
                   <h3 className="relative text-white text-4xl md:text-5xl font-bold opacity-90 mb-6">{p.title}</h3>

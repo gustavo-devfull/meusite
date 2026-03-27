@@ -22,6 +22,9 @@ export default function Hero() {
           src={heroImg}
           className="w-full h-full object-cover"
           style={{ objectPosition: 'center 15%', height: '100%' }}
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, transparent 50%, #797b7f 100%)' }} />
       </div>
@@ -34,6 +37,9 @@ export default function Hero() {
           className="w-full h-full object-cover"
           src={heroImg}
           style={{ height: '100%' }}
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #797b7f 0%, #797b7fcc 30%, transparent 65%)' }} />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #797b7f 0%, transparent 40%)' }} />
@@ -55,7 +61,7 @@ export default function Hero() {
             Desenvolvedor Front-End apaixonado por design e tecnologia, dedicado a criar soluções inovadoras e eficientes.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-start hero-animate">
-            <a href="#projetos" className="btn-primary bg-white text-[#797b7f] px-8 py-4 rounded-full font-bold text-sm tracking-wide">Ver Projetos</a>
+            <a href="#projetos" className="btn-primary bg-white text-[#4a4c50] px-8 py-4 rounded-full font-bold text-sm tracking-wide">Ver Projetos</a>
             <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide">Contato</a>
           </div>
         </div>

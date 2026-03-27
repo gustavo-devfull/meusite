@@ -13,9 +13,9 @@
   --color-surface-container-high: #6b6d71;
   --color-outline-variant: #5a5c60;
 
-  --font-family-headline: Inter;
-  --font-family-body: Inter;
-  --font-family-label: Inter;
+  --font-family-headline: 'DM Sans', sans-serif;
+  --font-family-body: 'DM Sans', sans-serif;
+  --font-family-label: 'DM Sans', sans-serif;
 
   --radius-DEFAULT: 0.125rem;
   --radius-lg: 0.25rem;
