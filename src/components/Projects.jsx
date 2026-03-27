@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ProjectModal from './ProjectModal'
 import raviImg from '../../assets/ravi.jpg'
+import spaceInvadersImg from '../../assets/space-invaders.jpg'
 
 const projects = [
   {
@@ -52,7 +53,7 @@ const projects = [
   },
   {
     href: 'https://gustavosantos.xyz/spaceinvaders/',
-    img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80',
+    img: spaceInvadersImg,
     imgAlt: 'Space Invaders',
     title: 'Space Invaders',
     tag: 'Game Dev • JS',
