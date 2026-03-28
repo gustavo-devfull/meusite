@@ -27,30 +27,30 @@ const formations = [
 
 export default function Formation() {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-24 border-t border-outline-variant/10" id="formacao">
-      <div className="mb-12" data-animate="left">
-        <span className="text-[0.75rem] font-bold uppercase tracking-widest text-on-surface-variant mb-3 block">Formação</span>
-        <h2 className="text-4xl md:text-5xl font-bold tracking-tight gradient-title">Educação & Cursos</h2>
+    <section className="max-w-7xl mx-auto px-6 border-t border-outline-variant/10" style={{ paddingTop: '30px', paddingBottom: '48px' }} id="formacao">
+      <div className="mb-8" data-animate="left">
+        <span className="text-[0.65rem] font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">Formação</span>
+        <h2 className="text-2xl md:text-3xl font-bold tracking-tight gradient-title">Educação & Cursos</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {formations.map(f => (
           <div
             key={f.type}
             data-animate="scale"
-            className="formation-card bg-surface-container-lowest rounded-2xl p-8 flex flex-col gap-6 border border-outline-variant/10"
+            className="formation-card bg-surface-container-lowest rounded-2xl p-5 flex flex-col gap-4 border border-outline-variant/10"
             style={{ transitionDelay: f.delay }}
           >
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <span className="material-symbols-outlined text-primary" style={{ fontSize: '20px' }}>{f.icon}</span>
+              <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-primary" style={{ fontSize: '16px' }}>{f.icon}</span>
               </div>
-              <span className="text-[0.7rem] font-bold uppercase tracking-widest text-on-surface-variant">{f.type}</span>
+              <span className="text-[0.6rem] font-bold uppercase tracking-widest text-on-surface-variant">{f.type}</span>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-on-surface mb-1">{f.title}</h3>
-              <p className="text-sm font-semibold text-primary mb-4">{f.institution}</p>
+              <h3 className="text-sm font-bold text-on-surface mb-1">{f.title}</h3>
+              <p className="text-xs font-semibold text-primary mb-3">{f.institution}</p>
               {f.description ? (
-                <p className="text-sm text-on-surface-variant leading-relaxed">{f.description}</p>
+                <p className="text-xs text-on-surface-variant leading-relaxed">{f.description}</p>
               ) : (
                 <ul className="text-sm text-on-surface-variant space-y-2">
                   {f.items.map(item => (

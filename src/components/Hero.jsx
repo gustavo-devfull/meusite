@@ -39,14 +39,14 @@ export default function Hero() {
           <p className="text-sm text-gray-300 mb-3 hero-animate">
             Front-End Developer <span className="opacity-60">&amp; Designer</span>
           </p>
-          <p className="text-xs text-gray-400 leading-relaxed mb-6 max-w-xs hero-animate">
+          <p className="text-xs text-white leading-relaxed mb-6 max-w-xs hero-animate">
             Apaixonado por design e tecnologia, criando soluções inovadoras e eficientes.
           </p>
           <div className="flex flex-row gap-3 hero-animate">
-            <a href="#projetos" className="btn-primary bg-white text-[#4a4c50] px-5 py-2.5 rounded-full font-bold text-xs tracking-wide">
+            <a href="#projetos" className="btn-primary bg-white text-[#4a4c50] py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
               Ver Projetos
             </a>
-            <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/30 text-white px-5 py-2.5 rounded-full font-bold text-xs tracking-wide">
+            <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/30 text-white py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
               Contato
             </a>
           </div>

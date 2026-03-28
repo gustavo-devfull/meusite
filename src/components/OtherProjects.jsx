@@ -120,11 +120,11 @@ export default function OtherProjects({ onOpenLightbox }) {
   }
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-32" style={{ position: 'relative' }}>
-      <div className="flex justify-between items-end mb-16" data-animate="left">
-        <h2 className="text-4xl font-bold gradient-title">Outros Projetos</h2>
+    <section className="max-w-7xl mx-auto px-6" style={{ paddingTop: '30px', paddingBottom: '48px', position: 'relative' }}>
+      <div className="flex justify-between items-end mb-8" data-animate="left">
+        <h2 className="text-2xl md:text-3xl font-bold gradient-title">Outros Projetos</h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((p, i) => (
           <div
             key={i}
@@ -133,19 +133,19 @@ export default function OtherProjects({ onOpenLightbox }) {
             style={{ transitionDelay: p.delay }}
             onClick={() => handleClick(p)}
           >
-            <div className="img-wrap overflow-hidden relative" style={{ height: '180px' }}>
+            <div className="img-wrap overflow-hidden relative" style={{ height: '140px' }}>
               <img
                 src={p.img}
                 alt={p.alt}
                 className="w-full h-full object-cover transition-transform duration-500"
-                style={{ height: '180px' }}
+                style={{ height: '140px' }}
                 loading="lazy"
                 decoding="async"
               />
             </div>
-            <div className="p-6 flex flex-col gap-2 flex-1">
-              <span className="text-[0.7rem] font-bold uppercase tracking-widest text-on-surface-variant">{p.tag}</span>
-              <h3 className="text-base font-bold text-on-surface leading-tight flex items-center gap-2">
+            <div className="p-4 flex flex-col gap-1.5 flex-1">
+              <span className="text-[0.6rem] font-bold uppercase tracking-widest text-on-surface-variant">{p.tag}</span>
+              <h3 className="text-sm font-bold text-on-surface leading-tight flex items-center gap-2">
                 {p.title}
                 {p.lightboxImg && (
                   <span
@@ -156,7 +156,7 @@ export default function OtherProjects({ onOpenLightbox }) {
                   </span>
                 )}
               </h3>
-              <p className="text-sm text-on-surface-variant flex-1">{p.desc}</p>
+              <p className="text-xs text-on-surface-variant flex-1">{p.desc}</p>
             </div>
           </div>
         ))}

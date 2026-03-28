@@ -71,24 +71,24 @@ export default function Projects() {
   const [activeModal, setActiveModal] = useState(null)
 
   return (
-    <section className="py-32" id="projetos" style={{ background: 'linear-gradient(180deg, #6e7074 0%, #797b7f 100%)' }}>
+    <section id="projetos" style={{ paddingTop: '30px', paddingBottom: '48px', background: 'linear-gradient(180deg, #6e7074 0%, #797b7f 100%)' }}>
       <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-16" data-animate="left">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight gradient-title">Projetos em Destaque</h2>
+        <div className="mb-8" data-animate="left">
+          <h2 className="text-2xl md:text-3xl font-bold tracking-tight gradient-title">Projetos em Destaque</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map(p => (
             <div key={p.imgAlt} data-animate={p.animate} className="group cursor-pointer" style={{ transitionDelay: p.delay }}>
               <div className="block">
-                <div className="project-card aspect-[16/9] bg-surface-container-lowest rounded-xl overflow-hidden mb-6 shadow-[0px_20px_40px_rgba(0,0,0,0.3)] relative flex flex-col items-center justify-end outline outline-2 outline-white/20">
+                <div className="project-card aspect-video bg-surface-container-lowest rounded-xl overflow-hidden mb-4 shadow-[0px_20px_40px_rgba(0,0,0,0.3)] relative flex flex-col items-center justify-end outline outline-2 outline-white/20">
                   <img className="absolute inset-0 w-full h-full object-cover" style={{ height: '100%' }} src={p.img} alt={p.imgAlt} loading="lazy" decoding="async" />
                   {p.extraGradient && <div className="absolute inset-0" style={{ background: p.extraGradient }} />}
                   <div className="absolute inset-0" style={{ background: p.gradient }} />
-                  <h3 className="relative text-white text-4xl md:text-5xl font-bold opacity-90 mb-6">{p.title}</h3>
+                  <h3 className="relative text-white text-2xl md:text-3xl font-bold opacity-90 mb-4">{p.title}</h3>
                 </div>
-                <span className="text-[0.75rem] font-bold uppercase tracking-widest text-on-surface-variant mb-3 block">{p.tag}</span>
-                <h2 className="text-2xl font-bold mb-3">{p.heading}</h2>
-                <p className="text-base text-on-surface-variant mb-4">{p.description}</p>
+                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">{p.tag}</span>
+                <h2 className="text-base font-bold mb-2">{p.heading}</h2>
+                <p className="text-xs text-on-surface-variant mb-3">{p.description}</p>
                 {p.modal ? (
                   <button
                     onClick={() => setActiveModal(p)}
