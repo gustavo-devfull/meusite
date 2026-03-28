@@ -99,24 +99,13 @@ h1, h2, h3, h4, h5, h6 {
   filter: blur(0);
 }
 
-#hero {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-}
-#hero .hero-content {
-  flex: 1;
-}
 @media (min-width: 768px) {
   #hero {
-    min-height: unset;
     height: 800px;
-    display: block;
   }
   #hero .hero-content {
     position: absolute;
     inset: 0;
-    flex: unset;
     display: flex;
     flex-direction: column;
     justify-content: center;
