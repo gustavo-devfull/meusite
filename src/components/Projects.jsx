@@ -71,10 +71,10 @@ export default function Projects() {
   const [activeModal, setActiveModal] = useState(null)
 
   return (
-    <section id="projetos" style={{ paddingTop: '30px', paddingBottom: '48px', background: 'linear-gradient(180deg, #6e7074 0%, #797b7f 100%)' }}>
+    <section id="projetos" style={{ paddingTop: '30px', paddingBottom: '48px', background: '#ffffff' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-8" data-animate="left">
-          <h2 className="text-2xl md:text-3xl font-bold tracking-tight gradient-title">Projetos em Destaque</h2>
+          <h2 className="text-4xl md:text-[42px] tracking-tight gradient-title lowercase" style={{ fontWeight: 300 }}>Projetos em Destaque</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map(p => (

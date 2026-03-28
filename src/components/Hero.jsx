@@ -34,20 +34,20 @@ export default function Hero() {
 
         {/* Texto imediatamente abaixo da foto */}
         <div className="px-5 pt-5 pb-10">
-          <h1 className="text-3xl font-bold tracking-tight text-white leading-tight mb-1 hero-animate">
+          <h1 className="text-3xl font-bold tracking-tight text-gray-900 leading-tight mb-1 hero-animate">
             Gustavo Santos
           </h1>
-          <p className="text-sm text-gray-300 mb-3 hero-animate">
+          <p className="text-sm text-gray-500 mb-3 hero-animate">
             Front-End Developer <span className="opacity-60">&amp; Designer</span>
           </p>
-          <p className="text-xs text-white leading-relaxed mb-6 max-w-xs hero-animate">
+          <p className="text-xs text-gray-500 leading-relaxed mb-6 max-w-xs hero-animate">
             Apaixonado por design e tecnologia, criando soluções inovadoras e eficientes.
           </p>
           <div className="flex flex-row gap-3 hero-animate">
-            <a href="#projetos" className="btn-primary bg-white text-[#4a4c50] py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
+            <a href="#projetos" className="btn-primary bg-gray-900 text-white py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
               Ver Projetos
             </a>
-            <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/30 text-white py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
+            <a href="#contato" className="btn-secondary border border-gray-300 text-gray-700 py-2.5 rounded-full font-bold text-xs tracking-wide flex-1 text-center">
               Contato
             </a>
           </div>
@@ -90,10 +90,10 @@ export default function Hero() {
               Apaixonado por design e tecnologia, criando soluções inovadoras e eficientes.
             </p>
             <div className="flex flex-row gap-4 hero-animate">
-              <a href="#projetos" className="btn-primary bg-white text-[#4a4c50] px-8 py-4 rounded-full font-bold text-sm tracking-wide">
+              <a href="#projetos" className="btn-primary bg-white text-gray-800 px-8 py-4 rounded-full font-bold text-sm tracking-wide">
                 Ver Projetos
               </a>
-              <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide">
+              <a href="#contato" className="btn-secondary bg-white/10 backdrop-blur-md border border-white/40 text-white px-8 py-4 rounded-full font-bold text-sm tracking-wide">
                 Contato
               </a>
             </div>

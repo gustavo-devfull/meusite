@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div
       className="text-on-background selection:bg-primary selection:text-white"
-      style={{ background: 'linear-gradient(160deg, #6e7074 0%, #797b7f 40%, #85878b 100%)', minHeight: '100vh' }}
+      style={{ background: '#ffffff', minHeight: '100vh' }}
     >
       <ScrollProgress />
       <Navbar />
