@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import heroImg from '../../assets/hero-guto.jpg'
+import heroImgHD from '../../assets/hero-guto-hd.jpg'
 
 export default function Hero() {
   const imgRef = useRef(null)
@@ -60,7 +61,7 @@ export default function Hero() {
           <img
             ref={imgRef}
             alt="Gustavo Santos"
-            src={heroImg}
+            src={heroImgHD}
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 15%', height: '100%' }}
             fetchpriority="high"
