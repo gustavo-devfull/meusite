@@ -62,7 +62,7 @@ export default function Hero() {
             alt="Gustavo Santos"
             src={heroImg}
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 15%' }}
+            style={{ objectPosition: 'center 15%', height: '100%' }}
             fetchpriority="high"
             loading="eager"
             decoding="async"

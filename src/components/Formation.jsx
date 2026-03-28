@@ -44,13 +44,13 @@ export default function Formation() {
               <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                 <span className="material-symbols-outlined text-primary" style={{ fontSize: '16px' }}>{f.icon}</span>
               </div>
-              <span className="text-[0.6rem] font-bold uppercase tracking-widest text-on-surface-variant">{f.type}</span>
+              <span className="text-[0.6rem] md:text-xs font-bold uppercase tracking-widest text-on-surface-variant">{f.type}</span>
             </div>
             <div>
-              <h3 className="text-sm font-bold text-on-surface mb-1">{f.title}</h3>
-              <p className="text-xs font-semibold text-primary mb-3">{f.institution}</p>
+              <h3 className="text-sm md:text-base font-bold text-on-surface mb-1">{f.title}</h3>
+              <p className="text-xs md:text-sm font-semibold text-primary mb-3">{f.institution}</p>
               {f.description ? (
-                <p className="text-xs text-on-surface-variant leading-relaxed">{f.description}</p>
+                <p className="text-xs md:text-sm text-on-surface-variant leading-relaxed">{f.description}</p>
               ) : (
                 <ul className="text-sm text-on-surface-variant space-y-2">
                   {f.items.map(item => (
