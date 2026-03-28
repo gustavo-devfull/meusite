@@ -122,7 +122,7 @@ export default function OtherProjects({ onOpenLightbox }) {
   return (
     <section className="max-w-7xl mx-auto px-6" style={{ paddingTop: '30px', paddingBottom: '48px', position: 'relative' }}>
       <div className="flex justify-between items-end mb-8" data-animate="left">
-        <h2 className="text-2xl md:text-3xl font-bold gradient-title">Outros Projetos</h2>
+        <h2 className="text-4xl md:text-[42px] gradient-title lowercase" style={{ fontWeight: 300 }}>Outros Projetos</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((p, i) => (

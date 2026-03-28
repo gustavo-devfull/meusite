@@ -30,7 +30,7 @@ export default function Formation() {
     <section className="max-w-7xl mx-auto px-6 border-t border-outline-variant/10" style={{ paddingTop: '30px', paddingBottom: '48px' }} id="formacao">
       <div className="mb-8" data-animate="left">
         <span className="text-[0.65rem] font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">Formação</span>
-        <h2 className="text-2xl md:text-3xl font-bold tracking-tight gradient-title">Educação & Cursos</h2>
+        <h2 className="text-4xl md:text-[42px] tracking-tight gradient-title lowercase" style={{ fontWeight: 300 }}>Educação & Cursos</h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {formations.map(f => (
