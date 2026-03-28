@@ -69,6 +69,17 @@ export default function ProjectModal({ project, onClose }) {
             </div>
           )}
 
+          {project.modal.link && (
+            <a
+              href={project.modal.link}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 mt-2 mb-6 px-5 py-2.5 rounded-full bg-gray-900 text-white text-xs font-bold tracking-wide hover:bg-gray-700 transition-colors"
+            >
+              Ver Projeto <span className="material-symbols-outlined" style={{ fontSize: '16px' }}>arrow_forward</span>
+            </a>
+          )}
+
           {project.modal.stackDetails && (
             <div>
               <p className="text-xs font-bold text-gray-900 uppercase tracking-widest mb-2">Stack e características técnicas:</p>

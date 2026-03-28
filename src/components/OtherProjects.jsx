@@ -20,6 +20,7 @@ const projects = [
     modal: {
       title: '🧑‍💻 Portfólio GPRETO',
       intro: 'Site de portfólio desenvolvido com foco em experiência visual, combinando animações com Framer Motion e renderização 3D via WebGL (OGL). Conta com componentes acessíveis via Radix UI, formulário de contato funcional integrado ao EmailJS e design system construído sobre Tailwind CSS.',
+      link: 'https://www.gustavosantos.com.br/',
       stackDetails: [
         { name: 'Tecnologias', desc: 'React · Framer Motion · OGL (WebGL) · Radix UI · EmailJS · Tailwind CSS · Vite' },
         { name: 'Deploy', desc: 'Vercel — portfolio-gustavosantos.vercel.app' },
@@ -68,6 +69,7 @@ const projects = [
     modal: {
       title: '📷 Gerador de QRCode',
       intro: 'Aplicação web para geração de QR Codes a partir de links ou texto livre, com opções de customização de tamanho, cor do código e cor de fundo. O QR Code é gerado em tempo real e pode ser copiado para a área de transferência ou baixado como PNG.',
+      link: 'https://gustavosantos.xyz/qrcode/',
       stackDetails: [
         { name: 'Tecnologias', desc: 'Vue.js · QRious · HTML/CSS vanilla' },
         { name: 'Deploy', desc: 'FTP' },
@@ -84,6 +86,7 @@ const projects = [
     modal: {
       title: '🌐 IA.br Checker',
       intro: 'Ferramenta web para verificação de disponibilidade de domínios .ia.br via protocolo RDAP. O usuário insere palavras terminadas em -ia e a aplicação extrai automaticamente o prefixo no formato correto (ex.: utopia → utop.ia.br), consulta a disponibilidade em tempo real e permite exportar os resultados em CSV.',
+      link: 'https://registro-omega-nine.vercel.app/',
       stackDetails: [
         { name: 'Tecnologias', desc: 'Vue.js · RDAP API · HTML/CSS vanilla' },
         { name: 'Deploy', desc: 'Vercel' },
