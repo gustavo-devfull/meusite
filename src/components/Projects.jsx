@@ -86,9 +86,9 @@ export default function Projects() {
                   <div className="absolute inset-0" style={{ background: p.gradient }} />
                   <h3 className="relative text-white text-2xl md:text-3xl font-bold opacity-90 mb-4">{p.title}</h3>
                 </div>
-                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">{p.tag}</span>
-                <h2 className="text-base font-bold mb-2">{p.heading}</h2>
-                <p className="text-xs text-on-surface-variant mb-3">{p.description}</p>
+                <span className="text-[0.65rem] md:text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2 block">{p.tag}</span>
+                <h2 className="text-base md:text-lg font-bold mb-2">{p.heading}</h2>
+                <p className="text-xs md:text-sm text-on-surface-variant mb-3">{p.description}</p>
                 {p.modal ? (
                   <button
                     onClick={() => setActiveModal(p)}

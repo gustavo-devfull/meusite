@@ -144,8 +144,8 @@ export default function OtherProjects({ onOpenLightbox }) {
               />
             </div>
             <div className="p-4 flex flex-col gap-1.5 flex-1">
-              <span className="text-[0.6rem] font-bold uppercase tracking-widest text-on-surface-variant">{p.tag}</span>
-              <h3 className="text-sm font-bold text-on-surface leading-tight flex items-center gap-2">
+              <span className="text-[0.6rem] md:text-xs font-bold uppercase tracking-widest text-on-surface-variant">{p.tag}</span>
+              <h3 className="text-sm md:text-base font-bold text-on-surface leading-tight flex items-center gap-2">
                 {p.title}
                 {p.lightboxImg && (
                   <span
@@ -156,7 +156,7 @@ export default function OtherProjects({ onOpenLightbox }) {
                   </span>
                 )}
               </h3>
-              <p className="text-xs text-on-surface-variant flex-1">{p.desc}</p>
+              <p className="text-xs md:text-sm text-on-surface-variant flex-1">{p.desc}</p>
             </div>
           </div>
         ))}

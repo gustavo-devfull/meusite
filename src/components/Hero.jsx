@@ -67,8 +67,6 @@ export default function Hero() {
             loading="eager"
             decoding="async"
           />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, #797b7f 0%, rgba(121,123,127,0.85) 35%, transparent 65%)' }} />
-          <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #797b7f 0%, transparent 45%)' }} />
         </div>
 
         {/* Conteúdo centralizado */}
