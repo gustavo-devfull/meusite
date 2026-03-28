@@ -28,10 +28,10 @@ export default function Hero() {
           loading="eager"
           decoding="async"
         />
-        {/* Gradiente mobile: base forte vinda de baixo */}
+        {/* Gradiente mobile: foto visível até ~60%, fade rápido depois */}
         <div
           className="md:hidden absolute inset-0"
-          style={{ background: 'linear-gradient(to bottom, rgba(121,123,127,0.15) 0%, rgba(121,123,127,0.6) 45%, #797b7f 80%)' }}
+          style={{ background: 'linear-gradient(to bottom, rgba(121,123,127,0.05) 0%, rgba(121,123,127,0.15) 50%, rgba(121,123,127,0.75) 70%, #797b7f 85%)' }}
         />
         {/* Gradiente desktop: lateral + base */}
         <div
@@ -45,7 +45,7 @@ export default function Hero() {
       </div>
 
       {/* Conteúdo */}
-      <div className="hero-content relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col justify-end md:justify-center pb-10 md:pb-0">
+      <div className="hero-content relative z-10 max-w-7xl mx-auto px-6 w-full flex flex-col justify-end md:justify-center pb-16 md:pb-0">
         <div className="max-w-lg md:max-w-4xl">
 
           {/* Badge — desktop only */}
